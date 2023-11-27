@@ -1,30 +1,46 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This proyect was created with [Vite](https://vitejs.dev/).
 
-Currently, two official plugins are available:
+- Is intended to be used with **BUN**, but you can use it with **PNPM** or **NPM**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## BUN
+```bash
+bun install
+```
+```bash
+bun dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## PNPM
+```bash
+pnpm i
+```
+```bash
+pnpm dev
+```
+
+## NPM
+```bash
+npm install
+```
+```bash
+npm run dev
+```
+
+<!-- Note: It should connect with the django backend, but that is a work in progress. -->
+Note: It should be connected to the django backend, but that is a work in progress.
+For now, it is basically the layout of the principal form, and also a simple login.
+
+The router is already configured, with protected routes.
+
+Also i like to use the shadcn components for the UI, but it could be bootstrap or whatever,
+i use it because it is simple and easy to use, and also they are extensible and customizable with tailwindcss.
+
+### TODO
+- [ ] Connect with the backend.
+- [ ] Add more forms.
+- [ ] Add the reports section.
+- [ ] Add the summary initial dashboard section.
+- [ ] Add the products section.
+- [ ] Add the clients section.
